@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+
+  mysql_db_container:
+    image: mysql:latest
+    container_name: mysql_db
+
+    environment:
+      MYSQL_ROOT_PASSWORD: tinhtran12345
+      MYSQL_DATABASE: ecoDB
+      MYSQL_USER: tinhtranDev
+      MYSQL_PASSWORD: 04012002
+
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - my-network
+
+
+  adminer_container:
+    image: adminer:latest
+    restart: always
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql_db_container
+    ports:
+      - "8088:8080"
+    networks:
+      - my-network
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  db_data:
