@@ -19,6 +19,38 @@ Redis
 Microservices
 
 
+- This is diagram flow work for this project
+
+
+
+### 2. Design database
+
+
+
+
+
+
+### 3. UI 
+
+
+
+
+### 4. Usage
+
+- Clone project
+
+```
+git clone https://github.com/tinhtran12345/ecoBird-springmvc.git
+```
+
+
+- Run docker compose
+
+```
+docker compose up -d
+```
+
+
 
 ## About me 
 

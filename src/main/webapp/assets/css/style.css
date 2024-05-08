@@ -2017,10 +2017,14 @@ Version:1.0
 
 .most-popular .owl-carousel .owl-controls .owl-nav .owl-prev {
     left: 0;
+    display:flex;
+    align-items: center;
 }
 
 .most-popular .owl-carousel .owl-controls .owl-nav .owl-next {
     right: 0;
+    display:flex;
+    align-items: center;
 }
 
 /*======================================
@@ -5895,3 +5899,17 @@ Version:1.0
 /*=============================
 	End Footer CSS
 ===============================*/
+
+
+/*Fix error UI*/
+
+.modal .owl-carousel .owl-controls .owl-nav .owl-prev{
+    display: flex;
+    align-items: center;
+}
+
+.modal .owl-carousel .owl-controls .owl-nav .owl-next{
+    display: flex;
+    align-items: center;
+}
+
